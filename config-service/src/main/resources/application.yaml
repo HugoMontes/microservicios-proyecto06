@@ -5,9 +5,10 @@ spring:
   application:
     name: config-service
   # Configuracion del repositorio local de archivos de configuracion
+  profiles:
+    active: native
   cloud:
     config:
       server:
-        git:
-          default-label: master
-          uri: file:///D:/miscursos/microservicios/proyecto06/repo-config/config-repo
+        native:
+          search-locations: file:///D:/miscursos/microservicios/proyecto06/repo-config/config-repo
