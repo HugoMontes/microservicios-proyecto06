@@ -1,0 +1,11 @@
+cliente:
+  params:
+    x: 301
+    y: 302
+
+# Propiedad para exponer TODOS los endpoints de monitoreo
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

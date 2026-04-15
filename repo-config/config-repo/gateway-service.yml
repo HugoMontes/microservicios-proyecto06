@@ -1,0 +1,4 @@
+gateway:
+  params:
+    a: 501
+    b: 502
