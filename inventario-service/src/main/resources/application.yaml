@@ -1,3 +1,9 @@
+server:
+  port: 8082
+
 spring:
   application:
     name: inventario-service
+  # Importar la configuracion desde el Config Server
+  config:
+    import: optional:configserver:http://localhost:8888
