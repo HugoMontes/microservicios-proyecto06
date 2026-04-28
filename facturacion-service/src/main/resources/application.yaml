@@ -1,0 +1,9 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: facturacion-service
+
+  config:
+    import: optional:consul:localhost:8500
