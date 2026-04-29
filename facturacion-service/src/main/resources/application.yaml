@@ -6,4 +6,20 @@ spring:
     name: facturacion-service
 
   config:
-    import: optional:consul:localhost:8500
+    import: optional:consul:localhost:8500, vault://
+
+  cloud:
+    vault:
+      token: hvs.vJ08QpE3wbbJDWnV80QL32n0
+      host: localhost
+      port: 8200
+      scheme: http
+      kv:
+        enabled: true
+
+# Propiedad para exponer TODOS los endpoints de monitoreo
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
